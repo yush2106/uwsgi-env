@@ -125,10 +125,9 @@ server {
 8. Try to open WebAPI pages on browser.
 
 App1
-<pre lang="bash">
-  http://127.0.0.1:8080/App1
-</pre>
+
+<a href="http://127.0.0.1:8080/App1" target="_blank">http://127.0.0.1:8080/App1</a>
+
 App2
-<pre lang="bash">
-  http://127.0.0.1:8080/App2
-</pre>
+
+<a href="http://127.0.0.1:8080/App2" target="_blank">http://127.0.0.1:8080/App2</a>
