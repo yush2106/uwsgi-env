@@ -22,10 +22,11 @@ The uWSGI `Emperor` allows each API to be loaded with its own dedicated Python v
 App1.ini
 <pre lang="bash">
 [uwsgi]
-socket = /tmp/app1.socket  ;socket
-chdir = /Users/user/uwsgi-env/APP1  ;app path
-module = App1:app  ;app instance
-home = /Users/user/uwsgi-env/APP1/python_env  ;virtual environment
+socket = /tmp/app1.socket
+chdir = /Users/user/uwsgi-env/APP1
+module = App1:app
+;virtual environment
+home = /Users/user/uwsgi-env/APP1/python_env
 
 chmod-socket = 660
 vacuum = true
@@ -37,10 +38,11 @@ threads = 2
 App2.ini
 <pre lang="bash">
 [uwsgi]
-socket = /tmp/app2.socket  ;socket
-chdir = /Users/user/uwsgi-env/APP2  ;app path
-module = App2:app  ;app instance
-home = /Users/user/uwsgi-env/APP2/python_env  ;virtual environment
+socket = /tmp/app2.socket
+chdir = /Users/user/uwsgi-env/APP2
+module = App2:app
+;virtual environment
+home = /Users/user/uwsgi-env/APP2/python_env
 
 chmod-socket = 660
 vacuum = true
@@ -54,7 +56,8 @@ threads = 2
 emperor.ini
 <pre lang="bash">
 [uwsgi]
-emperor = /Users/user/uwsgi-env/vassals  ;app configuration
+;all app configurations
+emperor = /Users/user/uwsgi-env/vassals
 die-on-term = true
 </pre>
 
