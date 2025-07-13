@@ -87,9 +87,8 @@ App2.py
   })
 </pre>
 
-5. Add WebAPI locations in the NGINX config file, `nginx.conf`.
+5. Add the WebAPI locations to the NGINX configuration file, which is typically located at `/etc/nginx/sites-available/default`.
 
-nginx.conf
 <pre lang="bash">
 server {
   listen       8080;
@@ -117,9 +116,9 @@ server {
   uwsgi --ini emperor.ini
 </pre>
 
-7. Restart NGINX service
+7. Restart NGINX service.
 <pre lang="bash">
-  nginx -s reload
+  sudo systemctl restart nginx
 </pre>
 
 8. Try to open WebAPI pages on browser.
